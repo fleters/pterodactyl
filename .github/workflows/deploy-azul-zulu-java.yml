@@ -1,4 +1,4 @@
-name: Java
+name: Java (specified)
 on:
   workflow_dispatch:
   # push:
