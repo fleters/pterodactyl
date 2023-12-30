@@ -1,0 +1,66 @@
+name: Azul Zulu Java Build
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *"
+  push:
+    branches:
+      - main
+    paths:
+      - docker-image/java/azul-zulu/**
+jobs:
+  push:
+    name: "pterodactyl:zulu_${{ matrix.tag }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+          - 7-latest
+          - 8-jre-headless-latest
+          - 8-jre-latest
+          - 8-latest
+          - 11-jre-headless-latest
+          - 11-jre-latest
+          - 11-latest
+          - 13-jre-headless-latest
+          - 13-jre-latest
+          - 13-latest
+          - 15-jre-headless-latest
+          - 15-jre-latest
+          - 15-latest
+          - 17-jre-headless-latest
+          - 17-jre-latest
+          - 17-latest
+          - 18-jre-headless-latest
+          - 18-jre-latest
+          - 18-latest
+          - 19-jre-headless-latest
+          - 19-jre-latest
+          - 19-latest
+          - 20-jre-headless-latest
+          - 20-jre-latest
+          - 20-latest
+          - 21-jre-headless-latest
+          - 21-jre-latest
+          - 21-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker/setup-qemu-action@v2
+      - uses: docker/setup-buildx-action@v2
+        with:
+          buildkitd-flags: --debug
+      - uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.TOKEN_GITHUB }}
+      - uses: docker/build-push-action@v4
+        with:
+          context: ./docker-image/java/azul-zulu
+          file: ./docker-image/java/azul-zulu/${{ matrix.tag }}/Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ghcr.io/fleters/pterodactyl:java_${{ matrix.tag }}
