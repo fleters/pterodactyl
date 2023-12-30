@@ -13,4 +13,4 @@ USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-CMD         [ "/bin/bash", "../entrypoint.sh" ]
+CMD         [ "/bin/curl", "-s https://github.com/fleters/pterodactyl/raw/main/docker-image/java/azul-zulu/entrypoint.sh" ]
