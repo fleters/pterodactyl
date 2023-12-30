@@ -1,4 +1,4 @@
-name: Java (specified)
+name: Operating System
 on:
   workflow_dispatch:
   # push:
@@ -8,13 +8,15 @@ on:
   #     - docker-image/java/**
 jobs:
   push:
-    name: "Azul Zulu - Java (version: ${{ matrix.azul-zulu }})"
+    name: "Operating System (version: ${{ matrix.os }})"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        azul-zulu:
-          - 21-latest
+        os:
+          - debian
+          - alpine
+          - ubuntu
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3
@@ -28,9 +30,9 @@ jobs:
           password: ${{ secrets.TOKEN_GITHUB }}
       - uses: docker/build-push-action@v5
         with:
-          context: ./docker-image/java
-          file: ./docker-image/java/azul-zulu/${{ matrix.azul-zulu }}/Dockerfile
+          context: ./docker-image/os
+          file: ./docker-image/os/${{ matrix.os }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/fleters/docker-image:zulu-${{ matrix.azul-zulu }}
+            ghcr.io/fleters/docker-image:os-${{ matrix.os }}
