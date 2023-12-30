@@ -1,31 +1,16 @@
 FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-debian:11-jre-headless-latest
 
-LABEL       author="Fleter Fight" maintainer="fleter@fleter.my.id"
+LABEL       author="Fleter" maintainer="fleter@fleter.my.id"
 
-RUN         apt update -y \
-            && apt install -y \
-                curl \
-                lsof \
-                ca-certificates \
-                openssl \
-                git \
-                tar \
-                sqlite3 \
-                fontconfig \
-                tzdata \
-                iproute2 \
-                libfreetype6 \
-                tini
+LABEL       org.opencontainers.image.source="https://github.com/fleters/pterodactyl/tree/main/docker-image"
+LABEL       org.opencontainers.image.licenses=MIT
 
-## Setup user and working directory
-RUN         useradd -m -d /home/container -s /bin/bash container
+RUN         apt-get update -y \
+            && apt-get install -y lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
+            && useradd -d /home/container -m container
+
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-STOPSIGNAL SIGINT
-
-COPY        --chown=container:container ./../entrypoint.sh /entrypoint.sh
-RUN         chmod +x /entrypoint.sh
-ENTRYPOINT    ["/usr/bin/tini", "-g", "--"]
-CMD         ["/entrypoint.sh"]
+CMD         [ "/bin/bash", "../entrypoint.sh" ]
