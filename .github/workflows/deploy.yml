@@ -43,5 +43,5 @@ jobs:
       - run: |
           cd docker-image/java/azul-zulu/${{ matrix.tag }}
           docker login --username fleters --password ${{ secrets.TOKEN_GITHUB }} ghcr.io
-          docker build ${{ matrix.tag }} --tag ghcr.io/fleters/docker-image-java:zulu_${{ matrix.tag }}
+          docker build ./${{ matrix.tag }} --tag ghcr.io/fleters/docker-image-java:zulu_${{ matrix.tag }}
           docker push ghcr.io/fleters/docker-image-java:zulu_${{ matrix.tag }}
