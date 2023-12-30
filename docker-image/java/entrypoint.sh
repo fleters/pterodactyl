@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/container
-java -version
 MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
+java -version
 clear
 ${MODIFIED_STARTUP}
