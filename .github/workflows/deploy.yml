@@ -63,4 +63,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/fleters/pterodactyl:java_${{ matrix.tag }}
+            ghcr.io/fleters/pterodactyl:zulu_${{ matrix.tag }}
