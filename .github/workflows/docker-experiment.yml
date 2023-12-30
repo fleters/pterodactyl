@@ -1,11 +1,13 @@
 name: Building Experiment
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1"
   push:
     branches:
       - main
     paths:
-      - docker-image/java/azul-zulu/**
+      - docker-image/experiment/**
 jobs:
   push:
     name: "Building Experiment (version: ${{ matrix.tag }})"
@@ -14,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - 21-latest
+          - latest
     steps:
       - uses: actions/checkout@v4
       # Setup QEMU for ARM64 Build
@@ -29,9 +31,9 @@ jobs:
           password: ${{ secrets.TOKEN_GITHUB }}
       - uses: docker/build-push-action@v5
         with:
-          context: ./docker-image/java/azul-zulu
-          file: ./docker-image/java/azul-zulu/${{ matrix.tag }}/Dockerfile
+          context: ./docker-image/experiment
+          file: ./docker-image/experiment/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/fleters/docker-image-java:${{ matrix.tag }}
+            ghcr.io/fleters/experiment:${{ matrix.tag }}
