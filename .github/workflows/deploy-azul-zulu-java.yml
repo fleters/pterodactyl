@@ -42,6 +42,7 @@ jobs:
           - 21-jre-headless-latest
           - 21-jre-latest
           - 21-latest
+          - latest
     steps:
       - uses: actions/checkout@v4
       # Setup QEMU for ARM64 Build
