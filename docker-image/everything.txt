@@ -1,0 +1,146 @@
+Official Docker Image: Golang 1.14|ghcr.io/pterodactyl/yolks:go_1.14
+Official Docker Image: Golang 1.15|ghcr.io/pterodactyl/yolks:go_1.15
+Official Docker Image: Golang 1.16|ghcr.io/pterodactyl/yolks:go_1.16
+Official Docker Image: Golang 1.17|ghcr.io/pterodactyl/yolks:go_1.17
+Official Docker Image: Java 8|ghcr.io/pterodactyl/yolks:java_8
+Official Docker Image: Java 8 - OpenJ9|ghcr.io/pterodactyl/yolks:java_8j9
+Official Docker Image: Java 11|ghcr.io/pterodactyl/yolks:java_11
+Official Docker Image: Java 11 - OpenJ9|ghcr.io/pterodactyl/yolks:java_11j9
+Official Docker Image: Java 16|ghcr.io/pterodactyl/yolks:java_16
+Official Docker Image: Java 16 - OpenJ9|ghcr.io/pterodactyl/yolks:java_16j9
+Official Docker Image: Java 17|ghcr.io/pterodactyl/yolks:java_17
+Official Docker Image: Java 17 - OpenJ9|ghcr.io/pterodactyl/yolks:java_17j9
+Official Docker Image: Java 18|ghcr.io/pterodactyl/yolks:java_18
+Official Docker Image: Java 18 - OpenJ9|ghcr.io/pterodactyl/yolks:java_18j9
+Official Docker Image: Java 19|ghcr.io/pterodactyl/yolks:java_19
+Official Docker Image: Java 19 - OpenJ9|ghcr.io/pterodactyl/yolks:java_19j9
+Official Docker Image: NodeJS 12|ghcr.io/pterodactyl/yolks:nodejs_12
+Official Docker Image: NodeJS 14|ghcr.io/pterodactyl/yolks:nodejs_14
+Official Docker Image: NodeJS 15|ghcr.io/pterodactyl/yolks:nodejs_15
+Official Docker Image: NodeJS 16|ghcr.io/pterodactyl/yolks:nodejs_16
+Official Docker Image: NodeJS 17|ghcr.io/pterodactyl/yolks:nodejs_17
+Official Docker Image: NodeJS 18|ghcr.io/pterodactyl/yolks:nodejs_18
+Official Docker Image: Python 3.7|ghcr.io/pterodactyl/yolks:python_3.7
+Official Docker Image: Python 3.8|ghcr.io/pterodactyl/yolks:python_3.8
+Official Docker Image: Python 3.9|ghcr.io/pterodactyl/yolks:python_3.9
+Official Docker Image: Python 3.10|ghcr.io/pterodactyl/yolks:python_3.10
+parkervcp: Operating System (alpine)|ghcr.io/parkervcp/yolks:alpine
+parkervcp: Operating System (debian)|ghcr.io/parkervcp/yolks:debian
+parkervcp: Operating System (ubuntu)|ghcr.io/parkervcp/yolks:ubuntu
+parkervcp: Bot (bastion)|ghcr.io/parkervcp/yolks:bot_bastion
+parkervcp: Bot (parkertron)|ghcr.io/parkervcp/yolks:bot_parkertron
+parkervcp: Bot (red)|ghcr.io/parkervcp/yolks:bot_red
+parkervcp: Bot (sinusbot)|ghcr.io/parkervcp/yolks:bot_sinusbot
+parkervcp: Cassandra (Java11 Python2)|ghcr.io/parkervcp/yolks:cassandra_java11_python2
+parkervcp: Cassandra (Java11 Python3)|ghcr.io/parkervcp/yolks:cassandra_java11_python3
+parkervcp: Dart (2.17)|ghcr.io/parkervcp/yolks:dart_2.17
+parkervcp: dotNet (2.1)|ghcr.io/parkervcp/yolks:dotnet_2.1
+parkervcp: dotNet (3.1)|ghcr.io/parkervcp/yolks:dotnet_3.1
+parkervcp: dotNet (5)|ghcr.io/parkervcp/yolks:dotnet_5
+parkervcp: dotNet (6)|ghcr.io/parkervcp/yolks:dotnet_6
+parkervcp: dotNet (7)|ghcr.io/parkervcp/yolks:dotnet_7
+parkervcp: dotNet (8)|ghcr.io/parkervcp/yolks:dotnet_8
+parkervcp: Elixir (1.12)|ghcr.io/parkervcp/yolks:elixir_1.12
+parkervcp: Elixir (1.13)|ghcr.io/parkervcp/yolks:elixir_1.13
+parkervcp: Elixir (1.14)|ghcr.io/parkervcp/yolks:elixir_1.14
+parkervcp: Elixir (1.15)|ghcr.io/parkervcp/yolks:elixir_1.15
+parkervcp: Elixir (latest)|ghcr.io/parkervcp/yolks:elixir_latest
+parkervcp: Erlang (22)|ghcr.io/parkervcp/yolks:erlang_22
+parkervcp: Erlang (23)|ghcr.io/parkervcp/yolks:erlang_23
+parkervcp: Erlang (24)|ghcr.io/parkervcp/yolks:erlang_24
+parkervcp: Game (altv)|ghcr.io/parkervcp/games:altv
+parkervcp: Game (arma3)|ghcr.io/parkervcp/games:arma3
+parkervcp: Game (dayz)|ghcr.io/parkervcp/games:dayz
+parkervcp: Game (minetest)|ghcr.io/parkervcp/games:minetest
+parkervcp: Game (mohaa)|ghcr.io/pterodactyl/games:mohaa
+parkervcp: Game (mta)|ghcr.io/pterodactyl/games:mta
+parkervcp: Game (samp)|ghcr.io/parkervcp/games:samp
+parkervcp: Game (source)|ghcr.io/parkervcp/games:source
+parkervcp: Game (valheim)|ghcr.io/parkervcp/games:valheim
+parkervcp: Golang (1.14)|ghcr.io/parkervcp/yolks:go_1.14
+parkervcp: Golang (1.15)|ghcr.io/parkervcp/yolks:go_1.15
+parkervcp: Golang (1.16)|ghcr.io/parkervcp/yolks:go_1.16
+parkervcp: Golang (1.17)|ghcr.io/parkervcp/yolks:go_1.17
+parkervcp: Golang (1.18)|ghcr.io/parkervcp/yolks:go_1.18
+parkervcp: Golang (1.19)|ghcr.io/parkervcp/yolks:go_1.19
+parkervcp: Golang (1.20)|ghcr.io/parkervcp/yolks:go_1.20
+parkervcp: Golang (1.21)|ghcr.io/parkervcp/yolks:go_1.21
+parkervcp: Java (8)|ghcr.io/parkervcp/yolks:java_8
+parkervcp: Java (11)|ghcr.io/parkervcp/yolks:java_11
+parkervcp: Java (16)|ghcr.io/parkervcp/yolks:java_16
+parkervcp: Java (17)|ghcr.io/parkervcp/yolks:java_17
+parkervcp: Java (19)|ghcr.io/parkervcp/yolks:java_19
+parkervcp: MariaDB (10.3)|ghcr.io/parkervcp/yolks:mariadb_10.3
+parkervcp: MariaDB (10.4)|ghcr.io/parkervcp/yolks:mariadb_10.4
+parkervcp: MariaDB (10.5)|ghcr.io/parkervcp/yolks:mariadb_10.5
+parkervcp: MariaDB (10.6)|ghcr.io/parkervcp/yolks:mariadb_10.6
+parkervcp: MariaDB (10.7)|ghcr.io/parkervcp/yolks:mariadb_10.7
+parkervcp: MariaDB (11.2)|ghcr.io/parkervcp/yolks:mariadb_11.2
+parkervcp: MongoDB (4)|ghcr.io/parkervcp/yolks:mongodb_4
+parkervcp: MongoDB (5)|ghcr.io/parkervcp/yolks:mongodb_5
+parkervcp: MongoDB (6)|ghcr.io/parkervcp/yolks:mongodb_6
+parkervcp: Mono|ghcr.io/parkervcp/yolks:mono_latest
+parkervcp: NodeJS (12)|ghcr.io/parkervcp/yolks:nodejs_12
+parkervcp: NodeJS (14)|ghcr.io/parkervcp/yolks:nodejs_14
+parkervcp: NodeJS (16)|ghcr.io/parkervcp/yolks:nodejs_16
+parkervcp: NodeJS (17)|ghcr.io/parkervcp/yolks:nodejs_17
+parkervcp: NodeJS (18)|ghcr.io/parkervcp/yolks:nodejs_18
+parkervcp: NodeJS (19)|ghcr.io/parkervcp/yolks:nodejs_19
+parkervcp: NodeJS (20)|ghcr.io/parkervcp/yolks:nodejs_20
+parkervcp: PostgreSQL (9)|ghcr.io/parkervcp/yolks:postgres_9
+parkervcp: PostgreSQL (10)|ghcr.io/parkervcp/yolks:postgres_10
+parkervcp: PostgreSQL (11)|ghcr.io/parkervcp/yolks:postgres_11
+parkervcp: PostgreSQL (12)|ghcr.io/parkervcp/yolks:postgres_12
+parkervcp: PostgreSQL (13)|ghcr.io/parkervcp/yolks:postgres_13
+parkervcp: PostgreSQL (14)|ghcr.io/parkervcp/yolks:postgres_14
+parkervcp: Python (3.7)|ghcr.io/parkervcp/yolks:python_3.7
+parkervcp: Python (3.8)|ghcr.io/parkervcp/yolks:python_3.8
+parkervcp: Python (3.9)|ghcr.io/parkervcp/yolks:python_3.9
+parkervcp: Python (3.10)|ghcr.io/parkervcp/yolks:python_3.10
+parkervcp: Python (3.11)|ghcr.io/parkervcp/yolks:python_3.11
+parkervcp: Python (3.12)|ghcr.io/parkervcp/yolks:python_3.12
+parkervcp: Redis (5)|ghcr.io/parkervcp/yolks:redis_5
+parkervcp: Redis (6)|ghcr.io/parkervcp/yolks:redis_6
+parkervcp: Redis (7)|ghcr.io/parkervcp/yolks:redis_7
+parkervcp: Rust (1.56)|ghcr.io/parkervcp/yolks:rust_1.56
+parkervcp: Rust (1.60)|ghcr.io/parkervcp/yolks:rust_1.60
+parkervcp: Rust (latest)|ghcr.io/parkervcp/yolks:rust_latest
+parkervcp: SteamCMD (debian)|ghcr.io/parkervcp/steamcmd:debian
+parkervcp: SteamCMD (dotnet)|ghcr.io/parkervcp/steamcmd:dotnet
+parkervcp: SteamCMD (proton)|ghcr.io/parkervcp/steamcmd:proton
+parkervcp: SteamCMD (ubuntu)|ghcr.io/parkervcp/steamcmd:ubuntu
+parkervcp: Voice (mumble)|ghcr.io/parkervcp/yolks:voice_mumble
+parkervcp: Voice (teaspeak)|ghcr.io/parkervcp/yolks:voice_teaspeak
+parkervcp: Wine|ghcr.io/parkervcp/yolks:wine_staging
+parkervcp: Installation Images (alpine)|ghcr.io/parkervcp/installers:alpine
+parkervcp: Installation Images (debian)|ghcr.io/parkervcp/installers:debian
+parkervcp: Installation Images (ubuntu)|ghcr.io/parkervcp/installers:ubuntu
+fleters: Azul Zulu Java (21)|ghcr.io/fleters/docker-image-java:zulu_21-latest
+fleters: Azul Zulu Java (21 JRE)|ghcr.io/fleters/docker-image-java:zulu_21-jre-latest
+fleters: Azul Zulu Java (21 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_21-jre-headless-latest
+fleters: Azul Zulu Java (20)|ghcr.io/fleters/docker-image-java:zulu_20-latest
+fleters: Azul Zulu Java (20 JRE)|ghcr.io/fleters/docker-image-java:zulu_20-jre-latest
+fleters: Azul Zulu Java (20 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_20-jre-headless-latest
+fleters: Azul Zulu Java (19)|ghcr.io/fleters/docker-image-java:zulu_19-latest
+fleters: Azul Zulu Java (19 JRE)|ghcr.io/fleters/docker-image-java:zulu_19-jre-latest
+fleters: Azul Zulu Java (19 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_19-jre-headless-latest
+fleters: Azul Zulu Java (18)|ghcr.io/fleters/docker-image-java:zulu_18-latest
+fleters: Azul Zulu Java (18 JRE)|ghcr.io/fleters/docker-image-java:zulu_18-jre-latest
+fleters: Azul Zulu Java (18 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_18-jre-headless-latest
+fleters: Azul Zulu Java (17)|ghcr.io/fleters/docker-image-java:zulu_17-latest
+fleters: Azul Zulu Java (17 JRE)|ghcr.io/fleters/docker-image-java:zulu_17-jre-latest
+fleters: Azul Zulu Java (17 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_17-jre-headless-latest
+fleters: Azul Zulu Java (15)|ghcr.io/fleters/docker-image-java:zulu_15-latest
+fleters: Azul Zulu Java (15 JRE)|ghcr.io/fleters/docker-image-java:zulu_15-jre-latest
+fleters: Azul Zulu Java (15 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_15-jre-headless-latest
+fleters: Azul Zulu Java (13)|ghcr.io/fleters/docker-image-java:zulu_13-latest
+fleters: Azul Zulu Java (13 JRE)|ghcr.io/fleters/docker-image-java:zulu_13-jre-latest
+fleters: Azul Zulu Java (13 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_13-jre-headless-latest
+fleters: Azul Zulu Java (11)|ghcr.io/fleters/docker-image-java:zulu_11-latest
+fleters: Azul Zulu Java (11 JRE)|ghcr.io/fleters/docker-image-java:zulu_11-jre-latest
+fleters: Azul Zulu Java (11 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_11-jre-headless-latest
+fleters: Azul Zulu Java (8)|ghcr.io/fleters/docker-image-java:zulu_8-latest
+fleters: Azul Zulu Java (8 JRE)|ghcr.io/fleters/docker-image-java:zulu_8-jre-latest
+fleters: Azul Zulu Java (8 JRE HEADLESS)|ghcr.io/fleters/docker-image-java:zulu_8-jre-headless-latest
+fleters: Azul Zulu Java (7)|ghcr.io/fleters/docker-image-java:zulu_7-latest
+fleters: Experiment|ghcr.io/fleters/experiment:latest
