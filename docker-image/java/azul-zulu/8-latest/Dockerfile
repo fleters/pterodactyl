@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-debian:latest
+FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-debian:8-latest
 
 LABEL       author="Fleter Fight" maintainer="fleter@fleter.my.id"
 
