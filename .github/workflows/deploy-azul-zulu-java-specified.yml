@@ -14,35 +14,7 @@ jobs:
       fail-fast: false
       matrix:
         azul-zulu:
-          - 7-latest
-          - 8-jre-headless-latest
-          - 8-jre-latest
-          - 8-latest
-          - 11-jre-headless-latest
-          - 11-jre-latest
-          - 11-latest
-          - 13-jre-headless-latest
-          - 13-jre-latest
-          - 13-latest
-          - 15-jre-headless-latest
-          - 15-jre-latest
-          - 15-latest
-          - 17-jre-headless-latest
-          - 17-jre-latest
-          - 17-latest
-          - 18-jre-headless-latest
-          - 18-jre-latest
-          - 18-latest
-          - 19-jre-headless-latest
-          - 19-jre-latest
-          - 19-latest
-          - 20-jre-headless-latest
-          - 20-jre-latest
-          - 20-latest
-          - 21-jre-headless-latest
-          - 21-jre-latest
           - 21-latest
-          - latest
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3

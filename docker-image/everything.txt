@@ -114,5 +114,33 @@ parkervcp: Voice (teaspeak)|ghcr.io/parkervcp/yolks:voice_teaspeak
 parkervcp: Wine|ghcr.io/parkervcp/yolks:wine_staging
 parkervcp: Installation Images (alpine)|ghcr.io/parkervcp/installers:alpine
 parkervcp: Installation Images (debian)|ghcr.io/parkervcp/installers:debian
-parkervcp: Installation Images (ubuntu)|ghcr.io/parkervcp/installers:ubuntu 
+parkervcp: Installation Images (ubuntu)|ghcr.io/parkervcp/installers:ubuntu
+fleters: Azul Zulu Java (21)|ghcr.io/fleters/docker-image:zulu-21-latest
+fleters: Azul Zulu Java (21 JRE)|ghcr.io/fleters/docker-image:zulu-21-jre-latest
+fleters: Azul Zulu Java (21 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-21-jre-headless-latest
+fleters: Azul Zulu Java (20)|ghcr.io/fleters/docker-image:zulu-20-latest
+fleters: Azul Zulu Java (20 JRE)|ghcr.io/fleters/docker-image:zulu-20-jre-latest
+fleters: Azul Zulu Java (20 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-20-jre-headless-latest
+fleters: Azul Zulu Java (19)|ghcr.io/fleters/docker-image:zulu-19-latest
+fleters: Azul Zulu Java (19 JRE)|ghcr.io/fleters/docker-image:zulu-19-jre-latest
+fleters: Azul Zulu Java (19 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-19-jre-headless-latest
+fleters: Azul Zulu Java (18)|ghcr.io/fleters/docker-image:zulu-18-latest
+fleters: Azul Zulu Java (18 JRE)|ghcr.io/fleters/docker-image:zulu-18-jre-latest
+fleters: Azul Zulu Java (18 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-18-jre-headless-latest
+fleters: Azul Zulu Java (17)|ghcr.io/fleters/docker-image:zulu-17-latest
+fleters: Azul Zulu Java (17 JRE)|ghcr.io/fleters/docker-image:zulu-17-jre-latest
+fleters: Azul Zulu Java (17 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-17-jre-headless-latest
+fleters: Azul Zulu Java (15)|ghcr.io/fleters/docker-image:zulu-15-latest
+fleters: Azul Zulu Java (15 JRE)|ghcr.io/fleters/docker-image:zulu-15-jre-latest
+fleters: Azul Zulu Java (15 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-15-jre-headless-latest
+fleters: Azul Zulu Java (13)|ghcr.io/fleters/docker-image:zulu-13-latest
+fleters: Azul Zulu Java (13 JRE)|ghcr.io/fleters/docker-image:zulu-13-jre-latest
+fleters: Azul Zulu Java (13 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-13-jre-headless-latest
+fleters: Azul Zulu Java (11)|ghcr.io/fleters/docker-image:zulu-11-latest
+fleters: Azul Zulu Java (11 JRE)|ghcr.io/fleters/docker-image:zulu-11-jre-latest
+fleters: Azul Zulu Java (11 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-11-jre-headless-latest
+fleters: Azul Zulu Java (8)|ghcr.io/fleters/docker-image:zulu-8-latest
+fleters: Azul Zulu Java (8 JRE)|ghcr.io/fleters/docker-image:zulu-8-jre-latest
+fleters: Azul Zulu Java (8 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-8-jre-headless-latest
+fleters: Azul Zulu Java (7)|ghcr.io/fleters/docker-image:zulu-7-latest
 fleters: PHP (.phar)|ghcr.io/fleters/docker-image:php-latest
