@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - docker-image/experiment/**
+      - docker-image/java/azul-zulu/**
 jobs:
   push:
     name: "Building Experiment (version: ${{ matrix.tag }})"
@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - latest
+          - 21-latest
     steps:
       - uses: actions/checkout@v4
       # Setup QEMU for ARM64 Build
@@ -31,9 +31,9 @@ jobs:
           password: ${{ secrets.TOKEN_GITHUB }}
       - uses: docker/build-push-action@v5
         with:
-          context: ./docker-image/experiment
-          file: ./docker-image/experiment/${{ matrix.tag }}/Dockerfile
+          context: ./docker-image/java/azul-zulu
+          file: ./docker-image/java/azul-zulu/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/fleters/experiment:${{ matrix.tag }}
+            ghcr.io/fleters/docker-image-java:${{ matrix.tag }}
