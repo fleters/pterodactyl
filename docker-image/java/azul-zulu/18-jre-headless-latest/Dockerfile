@@ -2,15 +2,35 @@ FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-debian:18-jre-hea
 
 LABEL       author="Fleter" maintainer="fleter@fleter.my.id"
 
-LABEL       org.opencontainers.image.source="https://github.com/fleters/pterodactyl/tree/main/docker-image"
-LABEL       org.opencontainers.image.licenses=MIT
+RUN         apt update -y \
+            && apt install -y \
+                curl \
+                lsof \
+                ca-certificates \
+                openssl \
+                git \
+                tar \
+                sqlite3 \
+                fontconfig \
+                tzdata \
+                iproute2 \
+                libfreetype6 \
+                tini \
+                gcc \
+                g++ \
+                ca-certificates \
+                dnsutils \
+                ffmpeg \
+                procps
 
-RUN         apt-get update -y \
-            && apt-get install -y lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
-            && useradd -d /home/container -m container
-
+RUN         useradd -m -d /home/container -s /bin/bash container
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-CMD         [ "/bin/curl", "-s https://github.com/fleters/pterodactyl/raw/main/docker-image/java/azul-zulu/entrypoint.sh" ]
+STOPSIGNAL SIGINT
+
+COPY        --chown=container:container ./../entrypoint.sh /entrypoint.sh
+RUN         chmod +x /entrypoint.sh
+ENTRYPOINT    ["/usr/bin/tini", "-g", "--"]
+CMD         ["/entrypoint.sh"]
