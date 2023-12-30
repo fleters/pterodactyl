@@ -42,5 +42,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
           ls
-          cd docker-image/java/azul-zulu
+          cd docker-image/java/azul-zulu/${{ matrix.tag }}
+          ls
+          cd ..
           ls
