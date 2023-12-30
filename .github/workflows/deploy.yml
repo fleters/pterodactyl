@@ -1,6 +1,5 @@
 name: Azul Zulu Java Build
 on:
-  push:
   workflow_dispatch:
 jobs:
   build_and_publish:
