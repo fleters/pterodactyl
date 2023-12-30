@@ -7,7 +7,7 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - experiment
+          - latest
     runs-on: ubuntu-latest
     name: "Building Experiment (version: ${{ matrix.tag }})"
     steps:
