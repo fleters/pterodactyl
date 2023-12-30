@@ -1,26 +1,3 @@
-# name: Building Experiment
-# on:
-#   workflow_dispatch:
-# jobs:
-#   build_and_publish:
-#     strategy:
-#       fail-fast: false
-#       matrix:
-#         tag:
-#           - latest
-#     runs-on: ubuntu-latest
-#     name: "Building Experiment (version: ${{ matrix.tag }})"
-#     steps:
-#       - uses: actions/checkout@v3
-#       - run: |
-#           cd docker-image/experiment/
-#           ls
-#           echo "---"
-#           docker login --username fleters --password ${{ secrets.TOKEN_GITHUB }} ghcr.io
-#           docker build ./${{ matrix.tag }} --tag ghcr.io/fleters/experiment:${{ matrix.tag }}
-#           docker push ghcr.io/fleters/experiment:${{ matrix.tag }}
-
-
 name: Building Experiment
 on:
   workflow_dispatch:
