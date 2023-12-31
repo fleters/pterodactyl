@@ -1,11 +1,11 @@
 name: PHP (.phar)
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - docker-image/php/**
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - docker-image/php/**
 jobs:
   push:
     name: "PHP (version: ${{ matrix.tag }})"
