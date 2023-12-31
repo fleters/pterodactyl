@@ -39,7 +39,7 @@
 #             ghcr.io/fleters/experiment:${{ matrix.tag }}
 
 
-name: Operating System
+name: Experiment Area
 on:
   workflow_dispatch:
   # push:
