@@ -21,7 +21,9 @@ RUN         apt update -y \
                 ca-certificates \
                 dnsutils \
                 ffmpeg \
-                procps
+                procps \
+                jq \
+                grep
 
 RUN         useradd -m -d /home/container -s /bin/bash container
 USER        container
