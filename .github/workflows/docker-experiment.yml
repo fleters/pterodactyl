@@ -1,25 +1,63 @@
-name: Building Experiment
+# name: Building Experiment
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: "0 0 * * 1"
+#   # push:
+#   #   branches:
+#   #     - main
+#   #   paths:
+#   #     - docker-image/experiment/**
+# jobs:
+#   push:
+#     name: "Building Experiment (version: ${{ matrix.tag }})"
+#     runs-on: ubuntu-latest
+#     strategy:
+#       fail-fast: false
+#       matrix:
+#         tag:
+#           - latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       # Setup QEMU for ARM64 Build
+#       - uses: docker/setup-qemu-action@v3
+#       - uses: docker/setup-buildx-action@v3
+#         with:
+#           buildkitd-flags: --debug
+#       - uses: docker/login-action@v3
+#         with:
+#           registry: ghcr.io
+#           username: ${{ github.repository_owner }}
+#           password: ${{ secrets.TOKEN_GITHUB }}
+#       - uses: docker/build-push-action@v5
+#         with:
+#           context: ./docker-image/experiment
+#           file: ./docker-image/experiment/${{ matrix.tag }}/Dockerfile
+#           platforms: linux/amd64,linux/arm64
+#           push: true
+#           tags: |
+#             ghcr.io/fleters/experiment:${{ matrix.tag }}
+
+
+name: Operating System
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * 1"
   # push:
   #   branches:
   #     - main
   #   paths:
-  #     - docker-image/experiment/**
+  #     - docker-image/os/**
 jobs:
   push:
-    name: "Building Experiment (version: ${{ matrix.tag }})"
+    name: "Operating System (version: ${{ matrix.os }})"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        tag:
-          - latest
+        os:
+          - alpine
     steps:
       - uses: actions/checkout@v4
-      # Setup QEMU for ARM64 Build
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
         with:
@@ -31,9 +69,9 @@ jobs:
           password: ${{ secrets.TOKEN_GITHUB }}
       - uses: docker/build-push-action@v5
         with:
-          context: ./docker-image/experiment
-          file: ./docker-image/experiment/${{ matrix.tag }}/Dockerfile
+          context: ./docker-image/os
+          file: ./docker-image/os/${{ matrix.os }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/fleters/experiment:${{ matrix.tag }}
+            ghcr.io/fleters/docker-image:os-${{ matrix.os }}
