@@ -143,4 +143,3 @@ fleters: Azul Zulu Java (8)|ghcr.io/fleters/docker-image:zulu-8-latest
 fleters: Azul Zulu Java (8 JRE)|ghcr.io/fleters/docker-image:zulu-8-jre-latest
 fleters: Azul Zulu Java (8 JRE HEADLESS)|ghcr.io/fleters/docker-image:zulu-8-jre-headless-latest
 fleters: Azul Zulu Java (7)|ghcr.io/fleters/docker-image:zulu-7-latest
-fleters: PHP (.phar)|ghcr.io/fleters/docker-image:php-latest
